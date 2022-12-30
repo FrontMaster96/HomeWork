@@ -1,0 +1,1521 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #25252d;
+}
+
+@font-face {
+    font-family: "museosanscyrl-100" ;
+    src: url("../fonts/museosanscyrl-100.ttf");
+}
+
+@font-face {
+    font-family: "museosanscyrl-300" ;
+    src: url("../fonts/museosanscyrl-300.ttf");
+}
+
+@font-face {
+    font-family: "museosanscyrl-500" ;
+    src: url("../fonts/museosanscyrl-500.ttf");
+}
+
+@font-face {
+    font-family: "museosanscyrl-700" ;
+    src: url("../fonts/museosanscyrl-700.ttf");
+}
+
+@font-face {
+    font-family: "Neumann";
+    src: url("../fonts/Neumann.otf");
+}
+
+.main {
+    background-image: url("../images/main-background.png");
+    background-position: center;
+    background-size: cover;
+}
+.main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+.header {
+    position: relative;
+    overflow-x: hidden;
+    border-bottom: 1px solid #363d51;
+    padding: 20px 0;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-block .logo {
+    margin-left: 140px;
+}
+
+
+
+.btn-menu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-menu:hover {
+    fill: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background: #25252d;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    transition: all 0.5s linear ;
+    transform: translateX(0%);
+}
+
+.menu_active {
+    display: flex;
+    transition: all 0.5s linear;
+    transform: translateX(0%);
+}
+
+.menu-list {
+    padding-top: 240px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.menu-list li:hover {
+    animation: zoom 2s linear;
+}
+
+.menu-title {
+    font-size: 40px;
+    font-family: "Neumann", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.375;
+    margin-right: 20px;
+}
+
+.close {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    fill: white;
+    align-self: flex-start;
+    position: absolute;
+    top: 20px;
+}
+
+.menu-list ul {
+    margin: 61px 0 41px 0;
+}
+
+.menu-list ul li {
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.menu-list ul li:hover {
+    color: #ecc66b;
+    list-style: disc;
+}
+
+.menu-list ul li a {
+    font-size: 18px;
+    font-family: "museosanscyrl-300", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.833;
+    text-decoration: none;
+}
+
+.menu-list ul li:hover a {
+    color: #ecc66b;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.header-block .icons a svg {
+    transition: 0.5s;
+}
+
+.main-block {
+    transition: 0.5s;
+    position: relative;
+    z-index: 0;
+    padding: 162px 0 257px 0;
+}
+
+.main-block_active {
+    transform: translateX(30%);
+}
+
+.contact-phone {
+    font-size: 18px;
+    font-family: "museosanscyrl-700", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button img {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-contact {
+    font-size: 16px;
+    font-family: "museosanscyrl-700", sans-serif;
+    color: rgb(236, 198, 107);
+    line-height: 0.938;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-contact:hover {
+    border-bottom: 1px solid #ECC66BFF;
+    transition: 0.5s;
+}
+
+.main-title {
+    font-size: 50px;
+    font-family: "Neumann", sans-serif;
+    color: rgb(236, 198, 107);
+    line-height: 1.2;
+    width: 595px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-text {
+    font-size: 18px;
+    font-family: "museosanscyrl-700", sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 25px 0 40px 0;
+    width: 529px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.btn {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-image: -moz-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(252, 195, 114) 0%, rgb(240, 219, 188) 100%);
+    font-size: 18px;
+    font-family: "museosanscyrl-700", sans-serif;
+    color: rgb(37, 37, 45);
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background-size: 200% auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    box-shadow: 0 5px 9px 1px rgba(227, 142, 48, 0.65);
+    transition: 0.5s;
+}
+.btn-white:hover {
+    box-shadow: 0 5px 9px 1px rgba(255, 253, 253, 0.22);
+    transition: 0.5s;
+}
+.arrow-swipe a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: 0.5s;
+
+}
+.arrow-swipe {
+    position: absolute;
+    left: -85px;
+    bottom: -50px;
+    animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes bounce-2 {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+#button-cart:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 37px);
+    left: calc(50% - 55px);
+    background: rgba(255,255,255,.4);
+    border-radius: 100px;
+    opacity: 1;
+    width: 40%;
+    height: 74px;
+    z-index: 100;
+}
+#button-cart:after {
+    animation: pulse-2 1.5s infinite;
+}
+
+.btn-booking:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 37px);
+    left: calc(50% - 55px);
+    background: rgba(255,255,255,.4);
+    border-radius: 100px;
+    opacity: 1;
+    width: 40%;
+    height: 74px;
+    z-index: 100;
+}
+.btn-booking:before {
+    animation: pulse-2 1.5s infinite;
+}
+
+@keyframes pulse-2 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.arrow-swipe-scroll {
+    animation: bounce-2 2s infinite;
+}
+
+
+.arrow-swipe a:hover {
+    fill: white;
+    transition: 0.5s;
+}
+
+.arrow-swipe a:hover span {
+    color: white;
+}
+.arrow-swipe a:hover svg {
+    fill: #FFFFFF;
+    transition: 0.5s;
+}
+.swipe span {
+    transform: rotate(180deg);
+    padding-left: 30px;
+    font-size: 18px;
+    font-family: "museosanscyrl-500", sans-serif;
+    color: rgb(186, 186, 186);
+    text-align: center;
+    -ms-transform: matrix(0, -1, 1, 0, 0, 0);
+    transition: 0.5s;
+}
+.swipe a:hover span {
+    color: #FFFFFF;
+}
+.swipe-arrow {
+    fill: rgba(255, 255, 255, 0.7);
+    transform: rotateZ(270deg);
+    transition: 0.5s;
+}
+
+.main::after {
+    content: "";
+    z-index: 10;
+    width: 100%;
+    height: 120px;
+    display: block;
+    background-image: linear-gradient(to bottom, transparent, #25252d 55%);
+}
+
+.main .icons svg {
+    margin-right: 30px;
+}
+
+.main-block .icons {
+    position: absolute;
+    right: -79px;
+    top: 48%;
+    transform: rotate(90deg);
+}
+
+.main-block .icons a svg {
+    margin-right: 30px;
+    transform: rotateZ(270deg);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icons a svg:hover {
+    fill: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+
+.project {
+    padding: 106px 0 121px 0;
+}
+
+.title {
+    max-width: 530px;
+    font-size: 40px;
+    font-family: "Neumann", sans-serif;
+    color: rgb(236, 198, 107);
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-container:nth-child(2) {
+    margin-top: 69px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 113px 0;
+    align-items: flex-start;
+}
+
+.project-container:nth-child(6n) {
+    margin: 0 0 63px 0;
+}
+
+
+.project-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 588px;
+    gap:23px;
+}
+
+.hover-image-scale {
+    display: inline-block;
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+.hover-image-scale img {
+    transition: 1s; /* Время эффекта */
+}
+.hover-image-scale img:hover  {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.project-info {
+    max-width: 486px;
+    margin-left: 126px;
+}
+
+.project-info-right {
+    max-width: 486px;
+    margin-right: 126px;
+}
+
+.project-info-title {
+    font-size: 30px;
+    font-family: "museosanscyrl-500", sans-serif;
+    color: rgb(255, 255, 255);
+    width: 264px;
+}
+
+.project-info-text {
+    font-size: 18px;
+    font-family: "museosanscyrl-300", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.278;
+    width: 486px;
+    padding: 40px 0 50px 0;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.advantage-item {
+    border: 1px solid #ECC66BFF;
+    border-radius: 50%;
+    width: 108px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantage-number {
+    font-size: 20px;
+    font-family: "museosanscyrl-500", sans-serif;
+    color: rgb(236, 198, 107);
+    line-height: 1.25;
+    text-align: center;
+}
+
+.project-info .btn {
+    width: 365px;
+}
+
+.project-info-right .btn {
+    width: 365px;
+}
+
+.main-info .btn-action {
+    text-align: center;
+}
+.btn-action a {
+    text-decoration: none;
+}
+
+.btn-white {
+    font-size: 18px;
+    font-family: "museosanscyrl-700", sans-serif;
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+    background: transparent;
+    border: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.btn-white:hover {
+    background-image: -webkit-linear-gradient(0deg, rgb(246 246 246 / 27%) 0%, rgb(255 255 255 / 27%) 100%);
+}
+
+.hiding-block {
+    display: none;
+    
+}
+
+.arrow-swipe-scroll {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-swipe-scroll span {
+    font-size: 18px;
+    font-family: "museosanscyrl-500", sans-serif;
+    color: #89898AFF;
+    line-height: 1.389;
+    transition: 0.5s;
+    padding-right: 11px;
+}
+.arrow-swipe-scroll:hover span {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+
+.arrow-swipe-scroll svg {
+    width: 24px;
+    height: 20px;
+    transition: 0.5s;
+    fill: #89898AFF;
+}
+
+.arrow-swipe-scroll:hover svg {
+    fill: #FFFFFF;
+    transition: 0.5s;
+}
+
+.technology-container {
+    padding-bottom: 224px;
+}
+
+.technology .title {
+    max-width: 531px;
+    margin-bottom: 83px;
+}
+
+.technology-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-item {
+    font-size: 17px;
+    font-family: "museosanscyrl-500", sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 203px;
+    padding-bottom: 16px;
+}
+
+.title-text {
+    font-size: 16px;
+    font-family: "museosanscyrl-100", sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 269px;
+}
+
+.technology-items {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.technology-item {
+    position: absolute;
+    top: -450px;
+    left: -242px;
+}
+
+.technology-item-two {
+    position: absolute;
+    top: -180px;
+    left: -273px;
+}
+
+.pointer .left {
+    transform: rotateX(180deg);
+}
+
+#ellipse-left {
+    top: 8px;
+
+}
+
+.pointer-two {
+    position: absolute;
+    bottom: 119px;
+    left: 208px;
+}
+
+.technology-item-tree {
+    position: absolute;
+    top: -400px;
+    right: -330px;
+}
+
+.pointer-four-left {
+    transform: rotateY(180deg);
+}
+
+.pointer-tree {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 11px;
+    left: -161px;
+}
+
+.pointer-tree .right {
+    transform: rotateX(180deg);
+}
+
+.pointer-four {
+    position: absolute;
+    top: 10px;
+    left: -175px;
+}
+
+#ellipse-right {
+    top: 8px;
+}
+
+#ellipse-down {
+    top: -32px;
+    left: -35px;
+}
+
+.technology-item-four {
+    position: absolute;
+    right: -270px;
+    bottom: 103px;
+}
+
+.technology-item-five {
+    position: absolute;
+    top: -37px;
+    right: -95px;
+}
+#checked.is_checked:before {
+border-color: red;
+}
+.checkbox.checked:before {
+border-color: red;
+}
+.pointer-five {
+    position: absolute;
+    top: 12px;
+    left: -169px;
+}
+
+.pointer-five-down {
+    transform: rotateY(180deg);
+}
+
+#down-ellipse {
+    left: -34px;
+}
+
+.pointer {
+    position: absolute;
+    bottom: 82px;
+    left: 239px;
+}
+
+.pointer-arrow {
+    border: 1px solid #ECC66BFF;
+    left: -232px;
+    width: 140px;
+}
+
+.arrow-deg {
+    border: 1px solid #ECC66BFF;
+    position: absolute;
+    width: 23px;
+    left: 139px;
+    top: -8px;
+    transform: rotateZ(320deg);
+}
+
+.ellipse {
+    border: 1px solid #ECC66BFF;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px black;
+    left: 155px;
+    top: -31px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.border {
+    border-radius: 50%;
+    background-color: rgb(236, 198, 107);
+    box-shadow: 0 0 25.5px 4.5px rgba(0, 0, 0, 0.004);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.advantages .title {
+    max-width: 596px;
+    margin-bottom: 121px;
+}
+
+.advantage-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 102px;
+}
+
+.advantage-info .title-item {
+    padding-bottom: 0;
+}
+
+.advantage-info .title-text {
+    width: 242px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.advantage-info .title-text span {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'museosanscyrl-700', sans-serif;
+}
+
+.item-advantage {
+    display: flex;
+    margin: 0 26px 75px;
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.item-advantage .number {
+    font-size: 70px;
+    font-family: "Neumann", sans-serif;
+    color: rgb(57, 57, 67);
+    text-align: left;
+    position: absolute;
+    top: -70px;
+    left: -12px;
+    z-index: -1;
+}
+
+.advantage-image {
+    margin-right: 18px;
+}
+
+.slider .title {
+    max-width: 726px;
+
+}
+
+.slider-gallery {
+    margin: 55px 0;
+}
+
+.gallery-photo {
+    display: flex;
+    justify-content: center;
+    /*margin: 40px 0;*/
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.covers {
+    display: none;
+}
+.gallery-item .slick-center {
+    width: 588px;
+}
+
+.gallery-info {
+    background-color: rgb(49, 49, 57);
+    width: 588px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.gallery-info-block-1.title-item {
+    font-size: 18px;
+    font-family: "museosanscyrl-500", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.gallery-info-block-2.title-text {
+    font-size: 16px;
+    font-family: "museosanscyrl-100", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.slick-slider {
+    padding-top: 40px;
+    position: initial;
+}
+.slick-slider .slick-list {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.slick-slider .items {
+    width: 450px;
+    margin: 0;
+    justify-content: center;
+}
+
+.slick-slider .items img {
+    width: 450px;
+    height: 350px;
+    transition: all linear 0.4s;
+}
+
+.slick-slider .slick-center img {
+    transform: scale(1.2);
+    height: 400px;
+    width: 470px;
+}
+
+.slick-slider .slick-arrow {
+    font-size: 0;
+}
+.fonts-text {
+    position: relative;
+    top: -36px;
+    background-color: #313139;
+    left: -47px;
+    width: 564px;
+    display: none;
+}
+
+.slick-center .fonts-text {
+    display: flex;
+    justify-content: center;
+}
+.slick-track {
+    padding-top: 40px;
+}
+
+.slick-center .items {
+    width: 550px;
+    height: 450px;
+    margin-left: -50px;
+}
+
+.fonts-descriptions {
+    margin: 10px 0;
+    padding: 0 33px;
+}
+
+.border-left {
+    border-left: 1px solid white;
+    height: 45px;
+    margin-top: 17px;
+}
+
+
+.slick-prev:before {
+    left: 0;
+    content: url("../images/prev.png");
+    background-repeat: no-repeat;
+
+}
+
+.slick-next:before {
+    right: 0;
+    content: url("../images/next.png");
+    background-repeat: no-repeat;
+
+}
+
+.slick-prev, .slick-next {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-prev:before, .slick-next:before {
+    border: 1px solid #ECC66BFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+}
+
+.slider .slick-dots {
+    display: flex;
+    width: 150px;
+    margin: 0 auto;
+}
+.slider .slick-dots li {
+    list-style: none;
+    padding: 8px;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgb(252 195 114);
+    opacity: 1;
+}
+
+
+.slick-dots li.slick-active button {
+    background-color:#FCC372FF;
+}
+
+
+
+.guarantee {
+    padding: 120px 0;
+}
+
+.guarantee .title {
+    max-width: 543px;
+}
+
+.guarantee-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0 60px 0;
+}
+
+.items-guarantee {
+    display: flex;
+    align-items: center;
+    background-color: rgb(49, 49, 57);
+    width: 587px;
+    padding: 30px 0 30px 40px;
+}
+
+.items-guarantee:first-child {
+    margin-right: 24px;
+}
+
+.item-image {
+    margin-right: 40px;
+}
+
+.items-guarantee-info .title-text {
+    max-width: 394px;
+    font-size: 18px;
+}
+
+.items-advantage-image {
+    border: 1px solid #ECC66BFF;
+    border-radius: 50%;
+    width: 138px;
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.block-advantage {
+    display: flex;
+    justify-content: space-around;
+}
+
+.items-advantage .title-item {
+    max-width: 284px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.items-advantage .title-text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.items-advantage-info {
+    padding: 30px 0 60px 0;
+}
+
+.guarantee .btn {
+    width: 384px;
+    display: block;
+    margin: 0 auto;
+}
+
+.forms {
+    padding: 0 0 67px 0;
+}
+
+.forms-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms-image {
+    margin-right: 76px;
+}
+
+.forms-info {
+
+}
+
+.forms-info .title {
+    max-width: 512px;
+    margin-bottom: 40px;
+}
+
+.advice-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#test-forms {
+    display: none;
+    align-items: center;
+    text-align: center;
+    height: 460px;
+    justify-content: center;
+    width: 512px;
+}
+
+#test-forms #text {
+    font-size: 25px;
+    display: flex;
+    max-width: 295px;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    color: rgb(255, 255, 255);
+}
+#test-forms div {
+    border: 2px solid #FFFDFD38;
+    padding: 35px;
+}
+
+#test-forms .btn {
+    font-size: 18px;
+    line-height: 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 90px;
+    height: 40px;
+    padding: 10px;
+    border: 0;
+    border-radius: 30px;
+}
+
+.advice-form .btn {
+    width: 409px;
+    margin-bottom: 30px;
+}
+
+.advice-form .input {
+    font-size: 18px;
+    font-family: "museosanscyrl-300", sans-serif;
+    color: rgb(255, 255, 255);
+    border: 1px solid #FFFFFFFF;
+    border-radius: 29px;
+    width: 409px;
+    height: 60px;
+    background: 0 0;
+    outline: 0;
+    box-sizing: border-box;
+    padding-left: 25px;
+}
+
+.advice-form .input::placeholder {
+    color: #FFFFFF;
+}
+
+.advice-form div {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.advice-form div:last-child {
+    margin-bottom: 0;
+}
+
+.advice-form .error-input {
+    left: 25px;
+    color: red;
+    font-size: 15px;
+    display: none;
+    position: absolute;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    appearance: inherit;
+}
+
+.checkbox-input {
+    position: relative;
+    display: flex;
+}
+
+.checkbox-input .title-text {
+    max-width: 314px;
+    font-size: 14px;
+    font-family: 'museosanscyrl-300', sans-serif;
+}
+
+.checkbox-input .title-text span {
+    text-decoration: underline;
+}
+
+
+.checkbox::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: -47px;
+    z-index: 5;
+    font-size: 24px;
+}
+
+.checkbox-input .checkbox:checked::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -1px;
+    left: -45px;
+    z-index: 10;
+    background-image: url("../images/tick.png");
+    background-repeat: no-repeat;
+}
+
+.booking {
+    background-image: url("../images/map.png");
+    height: 783px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.booking .title {
+    max-width: 442px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.booking .title-item {
+    line-height: 1.278;
+    text-align: center;
+    max-width: 470px;
+    margin: 0 auto;
+    padding: 30px 0 40px 0;
+}
+
+.booking .btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.booking .container {
+    padding: 300px 0 0 0;
+}
+
+.footer {
+    border-top: 1px solid #2F2F38FF;
+    padding: 50px 0 115px 0;
+}
+
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-info div {
+    font-size: 18px;
+    font-family: "museosanscyrl-500", sans-serif;
+    color: rgb(255, 255, 255);
+    width: 281px;
+}
+
+.footer-info div:first-child {
+    padding-bottom: 30px;
+}
+
+.logo-icons .logo {
+    padding-bottom: 56px;
+}
+
+/*.footer-block .contact .contact-phone {*/
+/*    padding-bottom: 21px;*/
+/*}*/
+
+.logo-icons {
+    display: block;
+    text-align: center;
+    margin: 0 330px 0 228px;
+    transition: 0.5s;
+}
+
+.logo-icons .icons  a  {
+    margin-right: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+
+.logo-icons .icons svg:hover  {
+    fill: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+    cursor: pointer;
+}
+ 
+.icons a {
+    transition: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo-icons .icons a:nth-child(3) {
+    margin-right: 0;
+}
+
+
+.loader {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.lds-default {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-default div {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(224, 128, 13, 0.89);
+    border-radius: 50%;
+    animation: lds-default 1.2s linear infinite;
+}
+
+.lds-default div:nth-child(1) {
+    animation-delay: 0s;
+    top: 37px;
+    left: 66px;
+}
+
+.lds-default div:nth-child(2) {
+    animation-delay: -0.1s;
+    top: 22px;
+    left: 62px;
+}
+
+.lds-default div:nth-child(3) {
+    animation-delay: -0.2s;
+    top: 11px;
+    left: 52px;
+}
+
+.lds-default div:nth-child(4) {
+    animation-delay: -0.3s;
+    top: 7px;
+    left: 37px;
+}
+
+.lds-default div:nth-child(5) {
+    animation-delay: -0.4s;
+    top: 11px;
+    left: 22px;
+}
+
+.lds-default div:nth-child(6) {
+    animation-delay: -0.5s;
+    top: 22px;
+    left: 11px;
+}
+
+.lds-default div:nth-child(7) {
+    animation-delay: -0.6s;
+    top: 37px;
+    left: 7px;
+}
+
+.lds-default div:nth-child(8) {
+    animation-delay: -0.7s;
+    top: 52px;
+    left: 11px;
+}
+
+.lds-default div:nth-child(9) {
+    animation-delay: -0.8s;
+    top: 62px;
+    left: 22px;
+}
+
+.lds-default div:nth-child(10) {
+    animation-delay: -0.9s;
+    top: 66px;
+    left: 37px;
+}
+
+.lds-default div:nth-child(11) {
+    animation-delay: -1s;
+    top: 62px;
+    left: 52px;
+}
+
+.lds-default div:nth-child(12) {
+    animation-delay: -1.1s;
+    top: 52px;
+    left: 62px;
+}
+
+@keyframes lds-default {
+    0%, 20%, 80%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.recording-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.recording {
+    background-image: url("../images/fon-recording.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #3F3F3FFF;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 40.67px 8.33px rgb(2 7 8);
+    width: 557px;
+    padding: 50px 70px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.recording .recording-cancel img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.recording .recording-cancel img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 40.67px 8.33px rgb(2 7 8);
+    transition: 0.7s;
+}
+
+.recording .recording-content .title-item {
+    max-width: 432px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.form-block {
+    background-image: url(../images/fon-recording.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #3F3F3FFF;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 40.67px 8.33px rgb(2 7 8);
+    width: 557px;
+    height: 496px;
+    padding: 50px 70px;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    display: none;
+}
+
+.form-block div {
+    display: block;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.form-block span {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: "museosanscyrl-500", sans-serif;
+}
+
+.form-block button {
+    margin-top: 30px;
+}
+
+.form-block .form-cancel img {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+
+
+
+
